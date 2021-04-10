@@ -28,9 +28,7 @@ $(document).ready(function(){
 	var phone = $('#EnTabContainer1_content_ctl00_panelLineContacts_contactsBlock_lblMobilePhoneVal');
 	phone.wrapInner('<a href="tel:' + phone.text() + '"></a>');
 
-	$.getScript('//en.creado.me/statistics.php?user=' + userLink.next('span').text());
-
-	// forum
+	$.getScript('https://en.creado.me/statistics.php?user=' + userLink.next('span').text());
 
 	$('tr.forumRow').has('a[href="/Guestbook.aspx?section=8077"]').addClass('siberia');
 
