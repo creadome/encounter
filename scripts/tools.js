@@ -1,16 +1,16 @@
 $(document).ready(function(){
 	var domain = window.location.hostname.split('.').reverse()[2];
 
-	$.get('//en.creado.me/tools/past.php', {domain: domain}, function(data) {
+	$.get('https://en.creado.me/tools/past.php', {domain: domain}, function(data) {
 		$('#boxCenterComingGames').prepend(data);
 	});
 
-	$.get('//en.creado.me/tools/calendar.php', {domain: domain}, function(data) {
+	$.get('https://en.creado.me/tools/calendar.php', {domain: domain}, function(data) {
 		$('#boxUser').append(data);
 	});
 
 	$.ajax({
-		url: '//yastatic.net/share2/share.js',
+		url: 'https://yastatic.net/share2/share.js',
 		dataType: 'script',
 		cache: true
 	}).done(function() {
